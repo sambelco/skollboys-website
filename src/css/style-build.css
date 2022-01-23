@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-size: 24px;
+  font-family: 'Gochi Hand', cursive, Arial, Helvetica, sans-serif; }
+
+.titleIMG {
+  width: 30rem;
+  margin-bottom: 1rem; }
+
+a {
+  color: inherit;
+  text-decoration: inherit; }
+
+.section {
+  padding: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  min-height: 100vh; }
+
+.left {
+  flex-basis: 50%; }
+
+p {
+  margin-bottom: .5rem;
+  font-size: 2rem; }
+
+.section01-header {
+  background-color: #d6fe8d;
+  position: relative;
+  flex-wrap: nowrap;
+  padding: 5rem 8rem; }
+  .section01-header .arrow {
+    width: 60px;
+    position: absolute; }
+  .section01-header .arrow-right {
+    right: 30px; }
+  .section01-header .arrow-left {
+    left: 30px; }
+  .section01-header .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    .section01-header .left .logo {
+      max-width: 100%;
+      margin-bottom: 1rem; }
+    .section01-header .left .icons {
+      display: flex;
+      gap: 1rem; }
+      .section01-header .left .icons img {
+        max-width: 5rem; }
+        .section01-header .left .icons img:hover {
+          opacity: .5; }
+  .section01-header .right .imgsContainer {
+    display: grid;
+    grid-template-columns: 12rem 12rem;
+    grid-template-rows: 12rem 12rem;
+    gap: 2rem; }
+    .section01-header .right .imgsContainer a {
+      position: relative;
+      width: 100%; }
+      .section01-header .right .imgsContainer a img {
+        max-width: 100%;
+        object-fit: contain; }
+        .section01-header .right .imgsContainer a img:hover {
+          filter: grayscale(100%); }
+
+.section02-aboutUS {
+  background-color: #A793C9;
+  flex-direction: column; }
+  .section02-aboutUS .container-subSection {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .section02-aboutUS .container-subSection .right {
+      flex: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section02-aboutUS .container-subSection .right img {
+        object-fit: contain;
+        width: 80%; }
+
+.section03-type {
+  background-color: #FFD145;
+  flex-direction: column; }
+  .section03-type .container-subSection {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .section03-type .container-subSection .right {
+      flex: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section03-type .container-subSection .right img {
+        object-fit: contain;
+        max-width: 80%; }
+
+.section04-roadmap {
+  flex-direction: column;
+  background-color: #FF7A4E; }
+  .section04-roadmap .roadmapIMG {
+    width: 80%; }
+    .section04-roadmap .roadmapIMG img {
+      width: 100%;
+      object-fit: contain; }
+  .section04-roadmap .roadmap-ul li {
+    font-size: 2rem; }
+
+.section05-team {
+  flex-direction: column;
+  background-color: #4D8495;
+  justify-content: inherit; }
+  .section05-team .container-team {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem; }
+    .section05-team .container-team .imgNFT {
+      max-width: 23rem; }
+      .section05-team .container-team .imgNFT img {
+        object-fit: contain;
+        width: 100%; }
+
+.section06-faqs {
+  background-color: #F6A0A9;
+  flex-direction: column; }
+  .section06-faqs .water-mark {
+    opacity: .5; }
+  .section06-faqs .accordion .accordion-item {
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25); }
+    .section06-faqs .accordion .accordion-item .accordion-item-header {
+      padding: 0.5rem 3rem 0.5rem 1rem;
+      min-height: 3.5rem;
+      line-height: 1.25rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      position: relative;
+      cursor: pointer; }
+      .section06-faqs .accordion .accordion-item .accordion-item-header::after {
+        content: "\002B";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        transition: 0.5s ease-in-out; }
+    .section06-faqs .accordion .accordion-item .active::after {
+      content: "\2212"; }
+    .section06-faqs .accordion .accordion-item .accordion-item-body {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out; }
+      .section06-faqs .accordion .accordion-item .accordion-item-body .accordion-item-body-content {
+        padding: 1rem;
+        line-height: 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.267); }
+
+@media only screen and (max-width: 1000px) {
+  body {
+    text-align: center; }
+
+  .section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+
+  .section01-header {
+    flex-wrap: wrap;
+    gap: 1rem; }
+
+  .container-subSection {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center; }
+
+  .section05-team .container-team {
+    gap: 2rem; } }
+@media only screen and (max-width: 700px) {
+  .arrow {
+    display: none; }
+
+  .section04-roadmap .roadmapIMG {
+    max-width: 100%; }
+    .section04-roadmap .roadmapIMG img {
+      object-fit: contain;
+      width: 100%; }
+
+  .section03-type .right img {
+    width: 100%; } }
+@media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.5rem; }
+
+  .titleIMG {
+    max-width: 100%; }
+
+  .left {
+    flex: none; }
+
+  .section01-header {
+    padding: 0 4rem; }
+    .section01-header .right .imgsContainer {
+      display: block; }
+      .section01-header .right .imgsContainer .not-effect {
+        display: block; }
+      .section01-header .right .imgsContainer img {
+        display: none; }
+
+  .container-team .container-team img {
+    width: 100%; } }
+@media only screen and (max-width: 350px) {
+  .section01-header .logo {
+    width: 100%; }
+  .section01-header .icons img {
+    width: 100%; }
+
+  .section03-type .right {
+    flex: auto; }
+    .section03-type .right img {
+      min-width: 100%; }
+
+  .section04-roadmap {
+    height: none; }
+    .section04-roadmap .roadmapIMG {
+      transform: scale(1.3); } }
+
+/*# sourceMappingURL=style.css.map */
